@@ -1,5 +1,6 @@
 #!/bin/bash
 
+cd ..
 npm init -y
 npm install webpack webpack-cli eslint@6.8.0 --save-dev
 npx eslint --init
@@ -20,6 +21,6 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
   },
 };" > webpack.config.js
-
+rm -r myProjectSetup
 #Set execute permission on your script using chmod command :
 #chmod 755 script-name-here.sh
