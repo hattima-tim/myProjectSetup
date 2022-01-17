@@ -1,5 +1,6 @@
 #!/bin/bash
 
+set -x
 cd ..
 npm init -y
 npm install webpack webpack-cli eslint@6.8.0 --save-dev
